@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://obj/objects.png" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 1.90688, 16.3275 )
+
+[node name="bridge-vertical" type="KinematicBody2D"]
+z_index = 1
+
+[node name="brigeV" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 235.116, 102.829, 25.8304, 33.29 )
+
+[node name="bridgeV-Collision1" type="CollisionShape2D" parent="."]
+position = Vector2( -10.4622, 0 )
+shape = SubResource( 1 )
+
+[node name="bridgeV-Collision2" type="CollisionShape2D" parent="."]
+position = Vector2( 10.7271, 0 )
+shape = SubResource( 1 )
